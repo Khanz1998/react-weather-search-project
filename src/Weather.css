@@ -1,0 +1,13 @@
+.Weather {
+  border: 1px solid #969696;
+}
+
+.Weather li {
+  list-style-position: initial;
+  list-style-type: none;
+}
+
+.Weather ul {
+  padding: 0;
+  list-style: none;
+}
