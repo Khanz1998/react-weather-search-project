@@ -5,7 +5,7 @@ import "./App.css";
 export default function App() {
   return (
     <div className="App">
-      <header className="App">
+      <div className="container">
         <h1>Weather Wise</h1>
         <footer>
           This project was coded by{" "}
@@ -25,7 +25,7 @@ export default function App() {
             open-sourced on Github
           </a>{" "}
         </footer>
-      </header>
+      </div>
     </div>
   );
 }
