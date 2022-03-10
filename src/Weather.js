@@ -1,5 +1,6 @@
 import React from "react";
 import "./Weather.css";
+import "./index.css";
 
 export default function Weather() {
   return (
@@ -25,14 +26,20 @@ export default function Weather() {
       </ul>
 
       <div className="row">
-        <div className="col-md-6">
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-            alt="sunny"
-          ></img>
-          6°C
+        <div className="col-6">
+          <div className="clearfix">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              alt="sunny"
+              className="float-left"
+            />
+            <div className="float-left">
+              <span className="temperature">6</span>
+              <span className="units">°C</span>
+            </div>
+          </div>
         </div>
-        <div className="col-md-6">
+        <div className="col-6">
           <ul>
             <li>Precipitation: 0%</li>
             <li>Humidity: 48%</li>

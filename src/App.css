@@ -1,4 +1,11 @@
+.App {
+  margin: 30px auto;
+  max-width: 600px;
+}
 .App footer {
   color: gray;
   font-family: "Courier New", Courier, monospace;
+  font-size: 11px;
+  margin-top: 20px;
+  text-align: center;
 }
