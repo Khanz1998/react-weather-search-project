@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Spinner from "react-spinkit";
 import axios from "axios";
+import WeatherInfo from "./WeatherInfo";
 import "./Weather.css";
 import "./index.css";
 
@@ -8,10 +9,11 @@ export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ loaded: false });
 
   function handleResponse(response) {
+    console.log(response.data);
     setWeatherData({
       loaded: true,
       temperature: Math.round(response.data.main.temp),
-      date: "Tuesday 12:00",
+      date: new Date(response.data.dt * 1000),
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),
       description: response.data.weather[0].description,
@@ -37,29 +39,7 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
-        <h2>{weatherData.city}</h2>
-        <ul>
-          <li>{weatherData.date}</li>
-          <li className="text-capitalize">{weatherData.description}</li>
-        </ul>
-
-        <div className="row mt-3">
-          <div className="col-6">
-            <img
-              className="float-left"
-              src={weatherData.icon}
-              alt={weatherData.description}
-            />
-            <span className="temperature">{weatherData.temperature}</span>
-            <span className="units">°C</span>
-          </div>
-          <div className="col-6">
-            <ul>
-              <li>Humidity: {weatherData.humidity}%</li>
-              <li>Wind: {weatherData.wind} km/h</li>
-            </ul>
-          </div>
-        </div>
+        <WeatherInfo data={weatherData} />
       </div>
     );
   } else {
