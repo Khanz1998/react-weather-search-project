@@ -9,13 +9,12 @@
 .Weather h2 {
   font-size: 24px;
   font-weight: 400;
-  line-height: 26px;
+  margin: 0;
   padding-top: 20px;
 }
 
 .Weather li {
   font-size: 12px;
-  line-height: 16px;
   list-style: none;
   list-style-position: initial;
 }
@@ -24,12 +23,26 @@
   list-style: none;
   padding: 0;
 }
+
+.Weather img {
+  margin-right: 10px;
+  display: inline-block;
+  height: 60px;
+  vertical-align: top;
+  width: 64px;
+}
+
 .Weather .temperature {
   color: black;
   font-size: 64px;
   font-weight: 400;
+  line-height: 64px;
 }
 
 .Weather .units {
+  display: inline-block;
   font-size: 16px;
+  line-height: 1;
+  margin: 6px 0px 0px 3px;
+  vertical-align: top;
 }
