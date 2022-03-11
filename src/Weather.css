@@ -17,7 +17,6 @@
   font-size: 12px;
   list-style: none;
   list-style-position: initial;
-  margin: 0;
 }
 
 .Weather ul {
@@ -46,4 +45,10 @@
   line-height: 1;
   margin: 6px 0px 0px 3px;
   vertical-align: top;
+}
+
+.spinner {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
 }
