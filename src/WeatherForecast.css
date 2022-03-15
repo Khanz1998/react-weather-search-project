@@ -1,0 +1,20 @@
+.WeatherForecast {
+  text-align: center;
+}
+
+.WeatherForecast-day .WeatherForecast-day {
+  line-height: 15px;
+  padding-top: 7px;
+}
+
+.WeatherForecast .WeatherForecast-temperatures {
+  display: inline;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 15px;
+}
+
+.WeatherForecast .WeatherForecast-low-temp {
+  opacity: 0.6;
+  margin-left: 5px;
+}

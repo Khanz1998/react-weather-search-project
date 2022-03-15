@@ -20,7 +20,7 @@ export default function WeatherInfo(props) {
             alt={props.data.description}
             className="img-icon"
           />
-          <div>
+          <div className="temperature">
             <TemperatureConversion celsius={props.data.temperature} />
           </div>
         </div>
