@@ -13,6 +13,10 @@
   margin-bottom: -10px;
 }
 
+.WeatherForecast img {
+  height: 60px;
+}
+
 .WeatherForecast .WeatherForecast-temperatures {
   display: inline;
   font-size: 13px;
