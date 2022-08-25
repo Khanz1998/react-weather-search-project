@@ -21,7 +21,7 @@ export default function App() {
           </a>{" "}
           and is{" "}
           <a
-            href="https://github.com/zahrakhan282react-weather-search-project"
+            href="https://github.com/zahrakhan282/react-weather-search-project"
             target="_blank"
             rel="noopener noreferrer"
           >
