@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+[Click here for a live demo](https://weather-wise.netlify.app/).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img width="500" alt="mockup-weather" src="https://user-images.githubusercontent.com/92318870/187888762-5b20032a-163a-48ad-a35f-90a331033e58.png">
 
-## Available Scripts
 
-In the project directory, you can run:
+# Weather App
 
-### `npm start`
+This is a React.js project focused on creating a fully functional live app that displays the weather and a 5-day forecast for the searched city.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation and Set-up Instructions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Clone down this repository you will need `node` and `npm` installed globally on your machine.
 
-### `npm test`
+### Installation
+`npm install`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### To Start Server
+`npm start`
 
-### `npm run build`
+## Reflection
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- API Integration
+- Daily Forecast
+- React Components
+- React Loops 
+- React Hooks 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This was my first React project and I learned so much by building each section. I divided this project in two phases. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Phase 1
+The first phase was creating the weather search by integrating the OpenWeatherMap API and returning the real-time, current weather of a chosen city, as well as the weather description, humidity, and wind speed. The main challenge of this phase was deciding when to create different components as to not over complicate their functionality.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Phase 2
+The second phase was dedicated to creating the daily forecast by building the layout, styling the feature, and integrating the API with the interface to display the data on the app, making sure it looks good for different scenarios. In this phase, I learned to loop through the numbers array using the JavaScript map() function to take care of rendering the daily forecast for the consecutive dates in order to avoid repetitive code.
